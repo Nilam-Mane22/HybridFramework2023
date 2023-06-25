@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learnAutomation.testcases.RegisterTest">
+      <class name="com.learnAutomation.testcases.LoginTest">
         <methods>
+          <include name="loginToApp" invocation-numbers="0"/>
           <include name="setupApplication"/>
           <include name="tearDown"/>
-          <include name="SignUpForApp" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.learnAutomation.testcases.RegisterTest -->
+      </class> <!-- com.learnAutomation.testcases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

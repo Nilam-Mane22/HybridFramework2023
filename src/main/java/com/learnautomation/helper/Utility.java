@@ -185,7 +185,7 @@ public class Utility {
 		
 		try 
 		{
-			FileHandler.copy(src, new File("./screenshot/WebElement_"+Utility.getCurrentDate()+".png"));
+			FileHandler.copy(src, new File("./Screenshots/WebElement_"+Utility.getCurrentDate()+".png"));
 			
 		} catch (IOException e) {
 			
@@ -202,7 +202,7 @@ public class Utility {
 		
 		try 
 		{
-			FileHandler.copy(((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE), new File("./screenshot/screenshot"+getCurrentDate()+".png"));
+			FileHandler.copy(((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE), new File("./Screenshots/screenshot"+getCurrentDate()+".png"));
 			
 		} catch (IOException e) {
 			
@@ -340,5 +340,7 @@ public class Utility {
 	{
 		new Actions(BrowserFactory.getDriver()).moveToElement(Element).perform();
 	}
+	
+	
 
 }

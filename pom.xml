@@ -1,76 +1,92 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.learnautomation.hybridFramework</groupId>
-  <artifactId>com.learnautomation.hybridFramework</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-<dependencies>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.learnautomation.hybridFramework</groupId>
+	<artifactId>com.learnautomation.hybridFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
 
 
-<dependency>
+		<dependency>
 
-<groupId>org.seleniumhq.selenium</groupId>
+			<groupId>org.seleniumhq.selenium</groupId>
 
-<artifactId>selenium-java</artifactId>
+			<artifactId>selenium-java</artifactId>
 
-<version>4.8.3</version>
+			<version>4.8.3</version>
 
-</dependency>
-
-
-<dependency>
-
-<groupId>org.testng</groupId>
-
-<artifactId>testng</artifactId>
-
-<version>7.6.1</version>
-
-<scope>test</scope>
-
-</dependency>
+		</dependency>
 
 
-<dependency>
+		<dependency>
 
-<groupId>org.apache.poi</groupId>
+			<groupId>org.testng</groupId>
 
-<artifactId>poi</artifactId>
+			<artifactId>testng</artifactId>
 
-<version>5.2.2</version>
+			<version>7.6.1</version>
 
-</dependency>
+			<scope>test</scope>
 
-
-<dependency>
-
-<groupId>org.apache.poi</groupId>
-
-<artifactId>poi-ooxml</artifactId>
-
-<version>5.2.2</version>
-
-</dependency>
+		</dependency>
 
 
-<dependency>
+		<dependency>
 
-<groupId>com.aventstack</groupId>
+			<groupId>org.apache.poi</groupId>
 
-<artifactId>extentreports</artifactId>
+			<artifactId>poi</artifactId>
 
-<version>5.0.9</version>
+			<version>5.2.2</version>
 
-</dependency>
-
-</dependencies>
+		</dependency>
 
 
-<build>
+		<dependency>
 
-<plugins> </plugins>
+			<groupId>org.apache.poi</groupId>
 
-</build>
+			<artifactId>poi-ooxml</artifactId>
+
+			<version>5.2.2</version>
+
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>com.aventstack</groupId>
+
+			<artifactId>extentreports</artifactId>
+
+			<version>5.0.9</version>
+
+		</dependency>
+
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.1.2</version>
+				<configuration>
+					<suiteXmlFiles>
+						<file>XMLFiles\learnautomationtestng.xml</file>
+					</suiteXmlFiles>
+					<properties>
+						<property>
+							<name>suitethreadpoolsize</name>
+							<value>2</value>
+						</property>
+					</properties>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
 
 
 </project>
