@@ -3,11 +3,13 @@ package com.learnAutomation.testcases;
 
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
-import com.learnautomation.base.BaseClass;
+
+
+import org.testng.annotations.Test;
 //import com.learnAutomation.constants.Constants;
 import com.learnautomation.dataProvider.CustomDataProvider;
+import com.learnautomation.helper.BaseClass;
 import com.learnautomation.pages.LoginPage;
 import com.learnautomation.pages.RegisterPage;
 

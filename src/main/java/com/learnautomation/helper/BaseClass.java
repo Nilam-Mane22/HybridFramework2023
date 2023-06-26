@@ -1,6 +1,7 @@
-package com.learnautomation.base;
+package com.learnautomation.helper;
 
 import org.openqa.selenium.WebDriver;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 

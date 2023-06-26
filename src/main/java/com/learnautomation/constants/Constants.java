@@ -7,7 +7,4 @@ public interface Constants
 	public String emptyEmail="Email is required";
 	public String userPassMisMatch="Email and Password Doesn't match";
 	public String existingEmail="Email already registered!";
-	
-	
-	
 }

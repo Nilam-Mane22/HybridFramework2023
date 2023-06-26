@@ -22,8 +22,8 @@ public class ExtentManager {
 
 	public static ExtentReports createInstance() {
 		
-		//ExtentSparkReporter sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/Automation.html");
-		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/Automation_" + Utility.getCurrentDateNew() + ".html");
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/Automation.html");
+		//ExtentSparkReporter sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/Automation_" + Utility.getCurrentDateNew() + ".html");
 		sparkReporter.config().setTheme(Theme.DARK);
 		sparkReporter.config().setDocumentTitle("Automation Report");
 		sparkReporter.config().setReportName("Sprint 1 Report");

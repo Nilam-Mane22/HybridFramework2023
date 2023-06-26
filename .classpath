@@ -31,5 +31,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="src" path="/com.learnautomation.hybridFramework"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

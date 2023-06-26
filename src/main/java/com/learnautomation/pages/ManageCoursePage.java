@@ -2,13 +2,14 @@ package com.learnautomation.pages;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.learnautomation.helper.Utility;
+
 
 public class ManageCoursePage {
 	
@@ -31,7 +32,7 @@ public class ManageCoursePage {
         private By categorySelection=By.xpath("//button[@class='menu-btn']//child::div");
         
         
-        public void AddNewCourse(String cname,String cdescription,String cintrsuctor,String stratfrom,String  endson,String state,String hobby )
+        public void AddNewCourse(String cname,String cdescription,String cintrsuctor,String stratDate,String  EndDate,String state,String hobby )
 		{
 			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='Sign Up']")));
@@ -40,7 +41,10 @@ public class ManageCoursePage {
 			Utility.waitForWebElement(driver,description).sendKeys(cdescription);
 			Utility.waitForWebElement(driver,instrauctorName).sendKeys(cintrsuctor);
 			Utility.waitForWebElement(driver,instrauctorName).sendKeys(cintrsuctor);
-			
+			Utility.waitForWebElement(driver,price).sendKeys(cintrsuctor);
+			Utility.waitForWebElement(driver,startDate).sendKeys(cintrsuctor);
+			Utility.waitForWebElement(driver,endDate).sendKeys(cintrsuctor);
+			Utility.waitForWebElement(driver,categorySelection).click();
 }
 }
 		
