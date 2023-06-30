@@ -32,7 +32,6 @@ public class ExtentManager {
 
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-
 		return extent;
 	}
 
