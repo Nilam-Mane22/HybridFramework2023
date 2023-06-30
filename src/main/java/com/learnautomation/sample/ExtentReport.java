@@ -3,6 +3,8 @@ package com.learnautomation.sample;
 import org.testng.annotations.Test;
 
 
+
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -29,9 +31,9 @@ public class ExtentReport
 		 *  MediaEntityBuilder - Screenshot
 		 */
 		
-		ExtentSparkReporter reporter=new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/AutomationReport.html");
+		ExtentSparkReporter reporter=new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/TestReport.html");
 		
-		reporter.config().setTheme(Theme.DARK);
+		//reporter.config().setTheme(Theme.DARK);
 		
 		reporter.config().setReportName("Automation Report");
 		
@@ -40,6 +42,8 @@ public class ExtentReport
 		ExtentReports extent=new ExtentReports();
 		
 		extent.attachReporter(reporter);
+		
+		extent.setSystemInfo("Tester", "Nilam");
 		
 		ExtentTest test1=extent.createTest("Login");
 		
@@ -52,12 +56,14 @@ public class ExtentReport
 		test1.log(Status.PASS, "User is not able to see dashboard");
 		
 		
+		
+		
 		ExtentTest test2=extent.createTest("Payment");
 		test2.info("User is able to enter card details");
 	
 		test2.info("User is able to enter CVV details");
 		// call build at last
-		test2.fail("OTP not received", MediaEntityBuilder.createScreenCaptureFromPath("/Users/mukeshotwani/eclipse-workspace/SeleniumTestNGMorningBatch/RobotClassScreenshot.png", "Current Status").build());
+		test2.fail("OTP not received", MediaEntityBuilder.createScreenCaptureFromPath("C:/Users/DELL/eclipse-workspace/com.learnAutomation.hybrid/Images/lcms.png", "Current Status").build());
 		
 		
 		ExtentTest test3=extent.createTest("Logout");
