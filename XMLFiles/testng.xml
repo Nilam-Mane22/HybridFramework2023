@@ -10,6 +10,7 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="com.learnAutomation.testcases.LoginTest" />
+			<class name="com.learnAutomation.testcases.RegisterTest" />			
 		</classes>
 	</test>
 </suite>
