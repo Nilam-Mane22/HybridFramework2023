@@ -63,6 +63,15 @@
 
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
+		</dependency>
+
+
 	</dependencies>
 
 
@@ -74,13 +83,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.1.2</version>
-				
+
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>XMLfiles/${suitXML}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
-				
+
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -89,7 +98,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					
+
 				</configuration>
 			</plugin>
 
