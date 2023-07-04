@@ -69,7 +69,7 @@
 
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>XMLfiles/${suitXML}</suiteXmlFile>
+						<suiteXmlFile>XMLfiles/${suiteXML}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
