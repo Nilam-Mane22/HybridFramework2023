@@ -2,9 +2,6 @@ package com.learnautomation.sample;
 
 import org.testng.annotations.Test;
 
-
-
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -33,7 +30,7 @@ public class ExtentReport
 		
 		ExtentSparkReporter reporter=new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/TestReport.html");
 		
-		//reporter.config().setTheme(Theme.DARK);
+		reporter.config().setTheme(Theme.DARK);
 		
 		reporter.config().setReportName("Automation Report");
 		
