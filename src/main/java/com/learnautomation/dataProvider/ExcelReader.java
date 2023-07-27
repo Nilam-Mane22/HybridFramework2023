@@ -4,6 +4,7 @@ import java.io.File;
 
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.CellType;
@@ -48,7 +49,12 @@ public class ExcelReader
 		}
 		
 		System.out.println("Test data generated");
-		
+		try {
+			wb.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return arr;
 	}
 	
@@ -69,12 +75,19 @@ public class ExcelReader
 		if(cell.getCellType()==CellType.STRING)
 		{
 				data=cell.getStringCellValue();
+				
 		}
 		else if(cell.getCellType()==CellType.NUMERIC)
 		{	
-				double valueFromNumericCell=cell.getNumericCellValue();
-				// String class have var methods which can convert int>String , double > String
-				data=String.valueOf(valueFromNumericCell);
+			DecimalFormat decimalFormat = new DecimalFormat("#");
+            data = decimalFormat.format(cell.getNumericCellValue());
+            //System.out.println(data+ "==4");
+          
+//				double valueFromNumericCell=cell.getNumericCellValue();
+//				// String class have var methods which can convert int>String , double > String			
+//			
+//				data=String.valueOf(valueFromNumericCell);
+//				System.out.println(data+ "==3");
 				
 		}
 		else if(cell.getCellType()==CellType.BOOLEAN)

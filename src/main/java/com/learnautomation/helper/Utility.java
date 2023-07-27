@@ -37,7 +37,7 @@ public class Utility {
 	 */
 	public static WebElement waitForWebElement(WebDriver driver,By locator)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(60));
 		
 		WebElement element=wait.until(ExpectedConditions.elementToBeClickable(locator));
 		

@@ -1,18 +1,19 @@
 package com.learnAutomation.testcases;
+
 import org.testng.Assert;
+
 
 import org.testng.annotations.Test;
 
 import com.learnautomation.constants.Constants;
 import com.learnautomation.dataProvider.CustomDataProvider;
 import com.learnautomation.helper.BaseClass;
-import com.learnautomation.pages.HomePage;
 import com.learnautomation.pages.LoginPage;
+import com.learnautomation.pages.ManageCoursePage;
 
-
-
-public class LoginTest extends BaseClass
-{
+public class ManageCourseTest extends BaseClass {
+	
+	
 	@Test(priority = 2 ,dataProvider = "login",dataProviderClass = CustomDataProvider.class)
 	public void loginToApp(String username,String password)
 	{
@@ -24,20 +25,16 @@ public class LoginTest extends BaseClass
 //		
 //		Assert.assertTrue(status,"Error messages is displayed as expected");
 //		
-		//com.learnautomation.helper.Utility.captureScreenshot(driver);	
-		//driver.quit();
+		//com.learnautomation.helper.Utility.captureScreenshot(driver);
+		
 	}
 	
+	@Test(priority = 3, dataProvider = "courseDetails", dataProviderClass = CustomDataProvider.class)
+	public void ManageCourseDetails(String courseName, String description, String instructor, String price,  String categorySelection) throws InterruptedException 
+	{
+   
+	ManageCoursePage course = new ManageCoursePage(driver);
+	course.CourseDetails(courseName, description, instructor, price, categorySelection);
 	
-//	@Test(priority = 3)
-//	
-//	public void landingOnhome()
-//	{
-//		HomePage Hpage=new HomePage(driver);
-//		String status=Hpage.capturedisplayMessage();
-//		Assert.assertEquals(status, "Something wents wrong" );
-//		
-//	}
-	
-	
+	}
 }

@@ -20,7 +20,9 @@ public class SocialMediaCount extends BaseClass
 	public void socialMediaCount()
 	{
    List<WebElement> social =driver.findElements(By.xpath("//div[@class='social']//div[@class='social-btns']/a"));
-	System.out.println(social.size());
+   System.out.println("\n***** The Total Media Count *****");
+	
+   System.out.println(social.size());
 	
 	Assert.assertEquals(social.size(), 5);
 
@@ -28,7 +30,8 @@ public class SocialMediaCount extends BaseClass
 	{
 	
 		String name =ele.getAttribute("href");
-		System.out.println(name);
+		
+		System.out.println(" "+name+" ");
 		if(name.contains("youtube")|| name.contains("twitter")|| name.contains("reddit")|| name.contains("facebook")|| name.contains("linkedin"))
 		{
 			
@@ -38,7 +41,7 @@ public class SocialMediaCount extends BaseClass
 			Assert.assertFalse(true);
 		}
 		}
-	  System.out.println("\n\n The Media count and list displayed: "+social.size());
+	  System.out.println("\n\nThe Media count and list displayed:: "+social.size());
 	
 }
 
