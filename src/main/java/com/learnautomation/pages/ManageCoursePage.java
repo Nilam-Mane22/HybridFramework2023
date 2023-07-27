@@ -18,7 +18,7 @@ public class ManageCoursePage
 	}
 
 	private By manageMenu = By.xpath("//span[text()='Manage']");
-	private By manageCourseSubMenu = By.xpath("(//a[contains(@class,'nav-menu-item')])[1]");
+	private By manageCourseSubMenu = By.xpath("//a[@href='/course/manage']");
 	private By addNewCourseBtn = By.xpath("//button[text()='Add New Course ']");
 	private By addImage = By.id("thumbnail");
 	private By courseName = By.xpath("//input[@id='name']");
@@ -33,7 +33,8 @@ public class ManageCoursePage
 	private By saveBtn = By.xpath("//button[@class='action-btn'][text()='Save']");
 
 	public void CourseDetails(String cname, String cdescription, String cintrsuctor, String cprice 
-			,String categoryNm) throws InterruptedException {
+			,String categoryNm) throws InterruptedException
+	{
 
 		Utility.waitForWebElement(driver, manageMenu); 
         new Actions(driver).moveToElement(driver.findElement(manageMenu)).perform(); 
