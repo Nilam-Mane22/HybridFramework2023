@@ -31,7 +31,7 @@ public class RegisterTest extends BaseClass
 //	boolean status2=Rpage.signupSuccessMessage().contains("Signup successfully, Please login!");
 //	Assert.assertTrue(status2,"Error message displayed as expected ");
 
-	driver.quit();
+	//driver.quit();
 	
 }
 }

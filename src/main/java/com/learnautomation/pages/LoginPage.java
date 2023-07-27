@@ -7,10 +7,9 @@ import com.learnautomation.helper.Utility;
 
 //import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-
+public class LoginPage 
+{
 	protected WebDriver driver;
-
 	public LoginPage(WebDriver driver) 
 	{
 		this.driver = driver;
@@ -35,19 +34,20 @@ public class LoginPage {
 //		return page;
 //	}
 
-	public void loginToApplication(String uname, String pwd) {
+	public void loginToApplication(String uname, String pwd) 
+	{
 		Utility.waitForWebElement(driver, username).sendKeys(uname);
 		Utility.waitForWebElement(driver, password).sendKeys(pwd);
 		Utility.waitForWebElement(driver, loginButton).click();
-
+		
 	}
+	
 
-	public String captureErrorMessage() {
-		WebElement element = Utility.waitForWebElement(driver, errormessage);
-
-		String error_msg = Utility.highlightWebElement(driver, element).getText();
-
-		return error_msg;
-	}
-
+//	public String captureErrorMessage() 
+//	{
+//		WebElement element = Utility.waitForWebElement(driver, errormessage);
+//		String error_msg = Utility.highlightWebElement(driver, element).getText();
+//		return error_msg;
+//	}
 }
+

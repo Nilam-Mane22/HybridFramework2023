@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learnAutomation.testcases.JDBCBasics2">
+      <class name="com.learnAutomation.testcases.E2ETest">
         <methods>
-          <include name="verifyDBRecords"/>
+          <include name="setupApplication"/>
+          <include name="SignUpForApp" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="CourseDetails"/>
+          <include name="enrollCourse" invocation-numbers="0"/>
+          <include name="loginToApp" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.learnAutomation.testcases.JDBCBasics2 -->
+      </class> <!-- com.learnAutomation.testcases.E2ETest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

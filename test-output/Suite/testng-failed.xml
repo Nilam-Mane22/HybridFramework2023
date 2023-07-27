@@ -6,13 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.learnAutomation.testcases.RegisterTest">
+      <class name="com.learnAutomation.testcases.ManageCourseTest">
         <methods>
+          <include name="loginToApp"/>
           <include name="setupApplication"/>
           <include name="tearDown"/>
-          <include name="SignUpForApp" invocation-numbers="0"/>
+          <include name="ManageCourseDetails"/>
         </methods>
-      </class> <!-- com.learnAutomation.testcases.RegisterTest -->
+      </class> <!-- com.learnAutomation.testcases.ManageCourseTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

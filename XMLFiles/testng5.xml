@@ -8,15 +8,15 @@
 
 	<test thread-count="5" name="Test">
 
-
-	  <classes>		
-     
-      <class name="com.learnAutomation.testcases.RegisterTest"/>
-      <class name="com.learnAutomation.testcases.LoginTest"/>
-      <class name="com.learnAutomation.testcases.SocialMediaCount"/>
-      <class name="com.learnAutomation.testcases.SmokeTest"/>
-      <class name="com.learnAutomation.testcases.JDBCBasics"/>
-
+		<classes>
+			<class name="com.learnAutomation.testcases.RegisterTest" />
+			<class name="com.learnAutomation.testcases.LoginTest" />
+			<class name="com.learnAutomation.testcases.SmokeTest" />
+			<class name="com.learnAutomation.testcases.ManageCourseTest" />
+			<class name="com.learnAutomation.testcases.CourseEnrollTest" />
+			<class name="com.learnAutomation.testcases.SocialMediaCount" />	
+			<class name="com.learnAutomation.testcases.JDBCBasics" />	
+						
 		</classes>
 
 	</test> <!-- Test -->
