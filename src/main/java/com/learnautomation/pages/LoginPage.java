@@ -16,11 +16,11 @@ public class LoginPage
 	}
 
 	private By newUserLink = By.linkText("New user? Signup");
-	private By errormessage = By.className("errorMessage");
+	//private By errormessage = By.className("errorMessage");
 	private By username = By.id("email1");
 	private By password = By.id("password1");
 	private By loginButton = By.className("submit-btn");
-	private By messsagedisplay = (By.xpath("//h4"));
+	//private By messsagedisplay = (By.xpath("//h4"));
 
 	public RegisterPage clickOnNewUserLink() {
 		Utility.waitForWebElement(driver, newUserLink).click();

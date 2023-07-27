@@ -18,7 +18,7 @@ import com.learnautomation.pages.RegisterPage;
 public class RegisterTest extends BaseClass
 {
 	@Test  (priority =1,dataProvider="SignUpUsers",dataProviderClass=CustomDataProvider.class)
-	public void SignUpForApp(String fname,String eid,String pwd,String interest,String gender,String state,String hobby) 
+	public void signUpIntoApp(String fname,String eid,String pwd,String interest,String gender,String state,String hobby) 
 	
 	{
 	LoginPage login=new LoginPage(driver);
