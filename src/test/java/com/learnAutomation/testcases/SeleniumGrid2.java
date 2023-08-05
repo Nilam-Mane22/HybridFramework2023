@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class SeleniumGrid {
+public class SeleniumGrid2 {
 
         public static void main(String[] args) {
                 
@@ -25,8 +25,13 @@ public class SeleniumGrid {
                 
                 
                 try {
-                        URL gridURL = new URL("http://localhost:4444/wd/hub");
+                	    //Instance 1
+                        URL gridURL = new URL("http://ec2-35-154-8-97.ap-south-1.compute.amazonaws.com:4444/wd/hub");
                         
+                        //Instance 2 
+                        //URL gridURL = new URL("http://ec2-65-2-156-68.ap-south-1.compute.amazonaws.com:4444/wd/hub");
+                     
+                 
                         WebDriver driver = new RemoteWebDriver(gridURL, cap);
                         
                         System.out.println(driver);

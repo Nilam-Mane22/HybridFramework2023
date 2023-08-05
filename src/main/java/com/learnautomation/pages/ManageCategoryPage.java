@@ -1,9 +1,10 @@
 package com.learnautomation.pages;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -19,45 +20,41 @@ public class ManageCategoryPage {
 	}
 
 	private By manageMenu = By.xpath("//div[@class='nav-menu-item-manage']");	
-	private By subMenuCateory = By.xpath("//a[@href='/category/manage']");	
-	private By addCategory = By.cssSelector("div[class='manage-btns'] button");
-	private By Nil = By.xpath("//div[@class='container-child']");
-	private By dip = By.className("manage-category");
+	private By subMenuCategory = By.xpath("//a[@href='/category/manage']");	
+	private By addNewCategory = By.xpath("//div[@class='manage-btns']");
+	
+	//private By addCategory = By.cssSelector("div[class='manage-btns'] button");
+	
+	
 	public void AddCategory(String categoryName) throws InterruptedException 	
 	{
 		Utility.waitForWebElement(driver, manageMenu); 
+		
         new Actions(driver).moveToElement(driver.findElement(manageMenu)).perform(); 
-        Thread.sleep(2000);
-        Utility.waitForWebElement(driver, subMenuCateory).click();
-        Thread.sleep(1000);  
+       
+        Utility.waitForWebElement(driver, subMenuCategory).click();
+        Thread.sleep(3000);  
         
-        String web = Utility.waitForWebElement(driver, Nil).getAttribute("class");
-        System.out.println(web);
+        String parent = driver.getWindowHandle();
+        //System.out.println("Current window handle is:"+parent);    
+        Set<String> allWindows= driver.getWindowHandles();      
+        //System.out.println("All Windows handle is::"+allWindows);       
+        Iterator<String> switchWindows = allWindows.iterator();   
         
-        
-        String web2 = driver.findElement(dip).getAttribute("class");
-        System.out.println(web2);
-        
-        
-        try
+        while(switchWindows.hasNext())
         {
-        	//driver.switchTo().frame(0); 
-        	Utility.waitForWebElement(driver, addCategory).click();
-        	//new Actions(driver).moveToElement(driver.findElement(addCategory)).perform(); 
-        	//driver.switchTo().defaultContent();      	
+                String child = switchWindows.next();
+                if(!child.equals(parent))
+                {
+                        driver.switchTo().window(child);                  
+                        Utility.waitForWebElement(driver, addNewCategory).click();                       
+                        Alert alt = driver.switchTo().alert();                       
+                        Utility.waitForAlert(driver, 10);                        
+                        alt.sendKeys(categoryName);                      
+                        System.out.println(categoryName+" category is added successfully");                       
+                        alt.accept();                     
+                }                
+                      driver.switchTo().window(parent);
         }
-        catch(Exception e)
-        {
-        	WebElement ele=driver.findElement(addCategory);
-        	JavascriptExecutor js=(JavascriptExecutor)driver;
-        	js.executeScript("arguments[0].click()",ele);           	
-        }
-        		
-		Alert alt = driver.switchTo().alert();
-		Utility.waitForAlert(driver, 10);
-		alt.sendKeys(categoryName);
-		System.out.println(categoryName + " is added successfully");
-		alt.accept();
-		driver.switchTo().alert().dismiss();
-	}
+ }
 }
