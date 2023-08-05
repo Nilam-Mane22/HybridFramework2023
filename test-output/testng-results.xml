@@ -1,96 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-27T11:17:07 IST" name="Suite" finished-at="2023-07-27T11:18:39 IST" duration-ms="91937">
+  <suite started-at="2023-08-04T12:52:12 IST" name="Default suite" finished-at="2023-08-04T12:52:33 IST" duration-ms="21279">
     <groups>
     </groups>
-    <test started-at="2023-07-27T11:17:07 IST" name="Test" finished-at="2023-07-27T11:18:39 IST" duration-ms="91937">
-      <class name="com.learnAutomation.testcases.RegisterTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.learnAutomation.testcases.RegisterTest@2f62ea70]" started-at="2023-07-27T11:17:07 IST" name="setupApplication" finished-at="2023-07-27T11:17:12 IST" duration-ms="4923" status="PASS">
+    <test started-at="2023-08-04T12:52:12 IST" name="Default test" finished-at="2023-08-04T12:52:33 IST" duration-ms="21279">
+      <class name="com.learnAutomation.testcases.ManageCategoryTest">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.learnAutomation.testcases.ManageCategoryTest@2794eab6]" started-at="2023-08-04T12:52:12 IST" name="setupApplication" finished-at="2023-08-04T12:52:18 IST" duration-ms="6353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="signUpIntoApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.learnAutomation.testcases.RegisterTest@2f62ea70]" started-at="2023-07-27T11:17:14 IST" name="signUpIntoApp" data-provider="SignUpUsers" finished-at="2023-07-27T11:17:28 IST" duration-ms="13917" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Nilam]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[nilamtest@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[nilam@123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Automation Testing]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Female]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Maharashtra]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Reading]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpIntoApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnAutomation.testcases.RegisterTest@2f62ea70]" started-at="2023-07-27T11:17:28 IST" name="tearDown" finished-at="2023-07-27T11:17:28 IST" duration-ms="316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.learnAutomation.testcases.RegisterTest -->
-      <class name="com.learnAutomation.testcases.SocialMediaCount">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.learnAutomation.testcases.SocialMediaCount@29ca3d04]" started-at="2023-07-27T11:18:36 IST" name="setupApplication" finished-at="2023-07-27T11:18:39 IST" duration-ms="2430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="socialMediaCount()[pri:0, instance:com.learnAutomation.testcases.SocialMediaCount@29ca3d04]" started-at="2023-07-27T11:18:39 IST" name="socialMediaCount" finished-at="2023-07-27T11:18:39 IST" duration-ms="182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- socialMediaCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnAutomation.testcases.SocialMediaCount@29ca3d04]" started-at="2023-07-27T11:18:39 IST" name="tearDown" finished-at="2023-07-27T11:18:39 IST" duration-ms="333" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.learnAutomation.testcases.SocialMediaCount -->
-      <class name="com.learnAutomation.testcases.SmokeTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.learnAutomation.testcases.SmokeTest@4331d187]" started-at="2023-07-27T11:17:35 IST" name="setupApplication" finished-at="2023-07-27T11:17:37 IST" duration-ms="2532" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="verifyURL()[pri:0, instance:com.learnAutomation.testcases.SmokeTest@4331d187]" started-at="2023-07-27T11:17:37 IST" name="verifyURL" finished-at="2023-07-27T11:17:37 IST" duration-ms="41" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnAutomation.testcases.SmokeTest@4331d187]" started-at="2023-07-27T11:17:38 IST" name="tearDown" finished-at="2023-07-27T11:17:38 IST" duration-ms="353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.learnAutomation.testcases.SmokeTest -->
-      <class name="com.learnAutomation.testcases.CourseEnrollTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.learnAutomation.testcases.CourseEnrollTest@554e218]" started-at="2023-07-27T11:18:01 IST" name="setupApplication" finished-at="2023-07-27T11:18:03 IST" duration-ms="2645" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="loginToApp(java.lang.String,java.lang.String)[pri:5, instance:com.learnAutomation.testcases.CourseEnrollTest@554e218]" started-at="2023-07-27T11:18:04 IST" name="loginToApp" data-provider="login" finished-at="2023-07-27T11:18:08 IST" duration-ms="3742" status="PASS">
+        <test-method signature="loginToApp(java.lang.String,java.lang.String)[pri:1, instance:com.learnAutomation.testcases.ManageCategoryTest@2794eab6]" started-at="2023-08-04T12:52:20 IST" name="loginToApp" data-provider="login" finished-at="2023-08-04T12:52:24 IST" duration-ms="3809" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,110 +27,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="enrollCourse(java.lang.String,java.lang.String)[pri:6, instance:com.learnAutomation.testcases.CourseEnrollTest@554e218]" started-at="2023-07-27T11:18:08 IST" name="enrollCourse" data-provider="courseEnroll" finished-at="2023-07-27T11:18:36 IST" duration-ms="27855" status="PASS">
+        <test-method signature="categoryManage(java.lang.String)[pri:2, instance:com.learnAutomation.testcases.ManageCategoryTest@2794eab6]" started-at="2023-08-04T12:52:24 IST" name="categoryManage" data-provider="category" finished-at="2023-08-04T12:52:33 IST" duration-ms="8061" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Pune]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[9975076028]]>
+                <![CDATA[UI Automation]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enrollCourse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnAutomation.testcases.CourseEnrollTest@554e218]" started-at="2023-07-27T11:18:36 IST" name="tearDown" finished-at="2023-07-27T11:18:36 IST" duration-ms="380" status="PASS">
+        </test-method> <!-- categoryManage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnAutomation.testcases.ManageCategoryTest@2794eab6]" started-at="2023-08-04T12:52:33 IST" name="tearDown" finished-at="2023-08-04T12:52:33 IST" duration-ms="519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.learnAutomation.testcases.CourseEnrollTest -->
-      <class name="com.learnAutomation.testcases.LoginTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.learnAutomation.testcases.LoginTest@8c3619e]" started-at="2023-07-27T11:17:28 IST" name="setupApplication" finished-at="2023-07-27T11:17:30 IST" duration-ms="2378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="loginToApp(java.lang.String,java.lang.String)[pri:2, instance:com.learnAutomation.testcases.LoginTest@8c3619e]" started-at="2023-07-27T11:17:31 IST" name="loginToApp" data-provider="login" finished-at="2023-07-27T11:17:35 IST" duration-ms="3689" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@email.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnAutomation.testcases.LoginTest@8c3619e]" started-at="2023-07-27T11:17:35 IST" name="tearDown" finished-at="2023-07-27T11:17:35 IST" duration-ms="329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.learnAutomation.testcases.LoginTest -->
-      <class name="com.learnAutomation.testcases.ManageCourseTest">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:com.learnAutomation.testcases.ManageCourseTest@6f63b475]" started-at="2023-07-27T11:17:38 IST" name="setupApplication" finished-at="2023-07-27T11:17:40 IST" duration-ms="2415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="loginToApp(java.lang.String,java.lang.String)[pri:2, instance:com.learnAutomation.testcases.ManageCourseTest@6f63b475]" started-at="2023-07-27T11:17:41 IST" name="loginToApp" data-provider="login" finished-at="2023-07-27T11:17:44 IST" duration-ms="3694" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@email.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="ManageCourseDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.learnAutomation.testcases.ManageCourseTest@6f63b475]" started-at="2023-07-27T11:17:45 IST" name="ManageCourseDetails" data-provider="courseDetails" finished-at="2023-07-27T11:18:00 IST" duration-ms="15814" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test Automation ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[This is test course]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Nilam]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1000]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Automation Testing ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ManageCourseDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.learnAutomation.testcases.ManageCourseTest@6f63b475]" started-at="2023-07-27T11:18:00 IST" name="tearDown" finished-at="2023-07-27T11:18:01 IST" duration-ms="369" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.learnAutomation.testcases.ManageCourseTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.learnAutomation.testcases.ManageCategoryTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
