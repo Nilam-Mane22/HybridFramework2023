@@ -13,8 +13,10 @@
 			<class name="com.learnAutomation.testcases.LoginTest" />
 			<class name="com.learnAutomation.testcases.SmokeTest" />
 			<class name="com.learnAutomation.testcases.ManageCourseTest" />
+			<class name="com.learnAutomation.testcases.ManageCategoryTest" />
 			<class name="com.learnAutomation.testcases.CourseEnrollTest" />
 			<class name="com.learnAutomation.testcases.SocialMediaCount" />	
+			<class name="com.learnAutomation.testcases.JDBCBasics" />	
 				
 						
 		</classes>
